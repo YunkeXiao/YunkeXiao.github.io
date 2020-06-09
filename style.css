@@ -1,41 +1,52 @@
-/* I found James Bosworth's codepen the other day (https://codepen.io/bosworthco/) and saw his work on shifted perspective and wanted to learn how to make it.
-I also found this Youtube video (https://www.youtube.com/watch?v=LgiadQQM6mo&list=PLbu98QxRH81KxxMclY_ZRmm4Dac-n7cSA) which is a great tutorial of the project. Enjoy!
-*/
-
+root{
+    font-size: 10px;
+}
 html {
     height: 100%;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    margin: 0;
     background: #f1f1f1;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 250px;
 }
+
+#menu-main {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    flex: 4 0 4rem;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+    border: 0.75rem solid rgb(82, 188, 185);
+}
+
 
 .perspective-text {
     color: black;
     font-family: Arial;
-    font-size: 58px;
+    font-size: 2.9rem;
     font-weight: 900;
     letter-spacing: -2px;
     text-transform: uppercase;
+    margin-top: 15rem;
+    margin-left: -5rem;
 }
 
 .perspective-line {
-    height: 50px;
+    height: 2.5rem;
     overflow: hidden;
     position: relative;
 }
 
 p {
     margin: 0;
-    height: 50px;
-    line-height: 50px;
+    height: 2.5rem;
+    line-height: 2.5rem;
     transition: all 0.5s ease-in-out;
 }
 
@@ -48,28 +59,35 @@ p {
 }
 
 .perspective-text:hover p {
-    transform: translate(0, -50px);
+    transform: translate(0, -2.5rem);
+    cursor: default;
 }
 
 .perspective-line:nth-child(1) {
-    left: 29px;
+    left: 1.45rem;
 }
 
 .perspective-line:nth-child(2) {
-    left: 58px;
-    /*background: white;*/
+    left: 2.9rem;
 }
 
 .perspective-line:nth-child(3) {
-    left: 87px;
-    /*background: #84cdfa;*/
+    left: 4.35rem;
 }
 
 .perspective-line:nth-child(4) {
-    left: 116px;
-    /*background: #5ad1cd;*/
+    left: 5.8rem;
 }
 
 .perspective-line:nth-child(5) {
-    left: 145px;
+    left: 7.25rem;
+}
+
+#visit{
+    margin-top: 15rem;
+    font-family: "Playfair Display", monospace;
+    font-weight: 600;
+    padding: 0 0.25rem;
+    font-size: 1rem;
+    background: linear-gradient(to bottom, #f1f1f1 60%, rgb(82, 188, 185) 40%);
 }
