@@ -58,6 +58,31 @@ p {
     transform: skew(0deg, -30deg) scaleY(1.337);
 }
 
+/*ANIMATED TITLE*/
+
+/*@keyframes change-text{*/
+/*    0%{*/
+/*        transform: translate(0, 0);*/
+/*    }*/
+/*    40%{*/
+/*        transform: translate(0, 0);*/
+/*    }*/
+/*    60%{*/
+/*        transform: translate(0, -2.5rem);*/
+/*    }*/
+/*    100%{*/
+/*        transform: translate(0, -2.5rem);*/
+/*    }*/
+/*}*/
+
+/*.perspective-text p{*/
+/*    animation-duration: 4s;*/
+/*    animation-name: change-text;*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-direction: alternate;*/
+/*    animation-timing-function:ease-in-out;*/
+/*}*/
+
 .perspective-text:hover p {
     transform: translate(0, -2.5rem);
     cursor: default;
@@ -84,7 +109,7 @@ p {
 }
 
 #visit{
-    margin-top: 15rem;
+    margin-top: 7.5rem;
     font-family: "Playfair Display", monospace;
     font-weight: 600;
     padding: 0 0.25rem;
