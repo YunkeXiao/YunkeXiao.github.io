@@ -18,7 +18,7 @@ body {
 }
 
 .perspective-text {
-    color: white;
+    color: black;
     font-family: Arial;
     font-size: 58px;
     font-weight: 900;
@@ -57,17 +57,17 @@ p {
 
 .perspective-line:nth-child(2) {
     left: 58px;
-    background: #f07e6e;
+    /*background: white;*/
 }
 
 .perspective-line:nth-child(3) {
     left: 87px;
-    background: #84cdfa;
+    /*background: #84cdfa;*/
 }
 
 .perspective-line:nth-child(4) {
     left: 116px;
-    background: #5ad1cd;
+    /*background: #5ad1cd;*/
 }
 
 .perspective-line:nth-child(5) {
