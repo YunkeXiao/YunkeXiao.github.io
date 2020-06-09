@@ -91,3 +91,7 @@ p {
     font-size: 1rem;
     background: linear-gradient(to bottom, #f1f1f1 60%, rgb(82, 188, 185) 40%);
 }
+
+#visit:hover{
+    cursor: pointer;
+}
