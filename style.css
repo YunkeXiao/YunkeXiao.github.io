@@ -12,6 +12,8 @@ body {
 }
 
 #main-menu {
+    /*TODO: Change display*/
+    display: none;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -23,6 +25,7 @@ body {
     align-items: center;
     overflow: hidden;
     border: 0.75rem solid rgb(82, 188, 185);
+    transition: opacity 1s;
 }
 
 
@@ -99,19 +102,21 @@ p {
     background-repeat: no-repeat;
     background-position: 0% 100%;
     background-size: 100%  0.5rem;
-    transition: background-size .5s, background-position .3s ease-in .5s;
+    transition: background-size .25s, background-position .2s ease-in .25s;
 }
 
 #visit:hover{
     background-size: 100% 100%;
     background-position: 0% 0%;
     cursor: pointer;
-    transition: background-position .5s, background-size .3s ease-in .5s;
+    transition: background-position .25s, background-size .2s ease-in .25s;
 }
 
 
 
 
 #main-page{
-    display: none;
+    display: flex;
+    opacity: 0;
+    transition: opacity 1s ease-in 1s;
 }
