@@ -11,7 +11,7 @@ body {
     background: #f1f1f1;
 }
 
-#menu-main {
+#main-menu {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -28,14 +28,13 @@ body {
 
 .perspective-text {
     color: black;
-    font-family: Arial;
+    font-family: Arial, monospace;
     font-size: 2.9rem;
     font-weight: 900;
     letter-spacing: -2px;
     text-transform: uppercase;
-    margin-top: 10rem;
-    margin-left: -5rem;
-    padding: 7.5rem 4rem 7.5rem 4rem;
+    margin-top: 20vh;
+    padding: 7.5rem 8rem 7.5rem 4rem;
 }
 
 .perspective-line {
@@ -58,31 +57,6 @@ p {
 .perspective-line:nth-child(even) {
     transform: skew(0deg, -30deg) scaleY(1.337);
 }
-
-/*ANIMATED TITLE*/
-
-/*@keyframes change-text{*/
-/*    0%{*/
-/*        transform: translate(0, 0);*/
-/*    }*/
-/*    40%{*/
-/*        transform: translate(0, 0);*/
-/*    }*/
-/*    60%{*/
-/*        transform: translate(0, -2.5rem);*/
-/*    }*/
-/*    100%{*/
-/*        transform: translate(0, -2.5rem);*/
-/*    }*/
-/*}*/
-
-/*.perspective-text p{*/
-/*    animation-duration: 4s;*/
-/*    animation-name: change-text;*/
-/*    animation-iteration-count: infinite;*/
-/*    animation-direction: alternate;*/
-/*    animation-timing-function:ease-in-out;*/
-/*}*/
 
 .perspective-text:hover p {
     transform: translate(0, -2.5rem);
@@ -108,15 +82,36 @@ p {
 .perspective-line:nth-child(5) {
     left: 7.25rem;
 }
+#visit-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 #visit{
+    text-align: center;
+    width: 3rem;
+    color: black;
     font-family: "Playfair Display", monospace;
     font-weight: 600;
-    padding: 0 0.25rem;
-    font-size: 1rem;
-    background: linear-gradient(to bottom, #f1f1f1 60%, rgb(82, 188, 185) 40%);
+    font-size: 1.25rem;
+    background-image: linear-gradient(rgb(82, 188, 185), rgb(82, 188, 185));
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-size: 100%  0.5rem;
+    transition: background-size .5s, background-position .3s ease-in .5s;
 }
 
 #visit:hover{
+    background-size: 100% 100%;
+    background-position: 0% 0%;
     cursor: pointer;
+    transition: background-position .5s, background-size .3s ease-in .5s;
+}
+
+
+
+
+#main-page{
+    display: none;
 }
