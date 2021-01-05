@@ -8,6 +8,6 @@ let transition = () =>{
     let main = document.getElementById("main-page");
     menu.style.opacity = '0';
     menu.addEventListener('transitioned', () => menu.remove());
-    main.style.display = "inline";
+    main.style.display = "flex";
     main.style.opacity = '100';
 }
