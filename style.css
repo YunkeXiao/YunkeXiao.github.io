@@ -121,6 +121,6 @@ p {
     transition: opacity 1s ease-in 1s;
     height: 100%;
     width: 100%;
-    visbility: none;
+    display: none;
     margin: 0;
 }
