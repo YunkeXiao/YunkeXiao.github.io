@@ -7,6 +7,7 @@ let transition = () =>{
     let menu = document.getElementById("main-menu");
     let main = document.getElementById("main-page");
     menu.style.opacity = '0';
-    menu.addEventListener('transitionend', () => menu.remove());
+    menu.addEventListener('transitioned', () => menu.remove());
+    main.style.visibility = "visible";
     main.style.opacity = '100';
 }
